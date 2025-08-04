@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Grading System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Student Grading Dashboard</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Grade Input</h2>
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" placeholder="e.g., Jane Doe" />
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" placeholder="e.g., Math" />
+
+      <label for="score">Score (0–100):</label>
+      <input type="number" id="score" />
+
+      <button onclick="addStudentGrade()">Add Grade</button>
+    </section>
+
+    <section>
+      <h2>Student Records</h2>
+      <ul id="recordList"></ul>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+      <button onclick="showAverage()">Show Average Score</button>
+      <p id="averageOutput"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
